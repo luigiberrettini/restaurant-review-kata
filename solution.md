@@ -198,7 +198,7 @@ The **restaurant service** covers the other use cases and, as for the data store
 #### Ratings
 
 After a review is approved:
- - NLP is used to extract positive/negative aspects from a review with aspect-based sentiment analysis
+ - NLP is used to extract positive/negative aspects from a review with aspect-based [sentiment analysis](https://arxiv.org/ftp/arxiv/papers/1709/1709.08698.pdf) ([ABSA](https://monkeylearn.com/blog/aspect-based-sentiment-analysis))
  - aggregation operations compute average ratings, number of reviews and the most frequent weighted pros and cons (restaurant profile and restaurant administration)
 
 To allow aggregation to be performed in near real-time a stream processing solution like [Flink](https://flink.apache.org) should be used.
